@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Dynamic Island</string>
+    <string name="subtitle">A ColorOS-style Fluid Cloud for the CMF Phone 2 Pro</string>
+    <string name="step1">1 · Permissions</string>
+    <string name="step2">2 · Run</string>
+    <string name="step3">3 · Calibrate to the punch-hole</string>
+    <string name="grant_overlay">Grant: Display over other apps</string>
+    <string name="grant_notif">Grant: Notification access</string>
+    <string name="start">Start island</string>
+    <string name="stop">Stop</string>
+    <string name="calib_hint">Adjust until the black pill sits exactly over the camera cutout. Changes apply live while the island runs.</string>
+    <string name="y_offset">Vertical position (top offset)</string>
+    <string name="collapsed_w">Pill width (idle)</string>
+    <string name="collapsed_h">Pill height (idle)</string>
+    <string name="expanded_w">Expanded width</string>
+    <string name="corner">Corner roundness</string>
+    <string name="test_hint">Test it: play a song (the card appears), or get any notification (it pops, then collapses). Tap to open the app; long-press to expand/collapse.</string>
+</resources>

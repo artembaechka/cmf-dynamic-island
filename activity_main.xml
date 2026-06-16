@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/subtitle"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#11000000"
+            android:fontFamily="monospace"
+            android:padding="12dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/step1"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/grant_overlay" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNotifAccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/grant_notif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/step2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:text="@string/start" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStop"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:text="@string/stop" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/step3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calib_hint"
+            android:textSize="12sp" />
+
+        <TextView style="@style/Lbl" android:text="@string/y_offset" />
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="80"
+            android:stepSize="1" />
+
+        <TextView style="@style/Lbl" android:text="@string/collapsed_w" />
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderCW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="60"
+            android:valueTo="240"
+            android:stepSize="1" />
+
+        <TextView style="@style/Lbl" android:text="@string/collapsed_h" />
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderCH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="18"
+            android:valueTo="60"
+            android:stepSize="1" />
+
+        <TextView style="@style/Lbl" android:text="@string/expanded_w" />
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderEW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="200"
+            android:valueTo="380"
+            android:stepSize="1" />
+
+        <TextView style="@style/Lbl" android:text="@string/corner" />
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderCorner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="40"
+            android:stepSize="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/test_hint"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</ScrollView>
